@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="referrer" content="no-referrer" />
+<meta name="theme-color" content="#0B0809" />
+<title>Share links · Groom's side</title>
+<link rel="icon" href="seal.png" />
+<link rel="apple-touch-icon" href="seal.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&family=Gulzar&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#0B0809; --ink:#F6EEE0; --muted:rgba(246,238,224,.66); --faint:rgba(246,238,224,.42);
+  --line:rgba(228,193,115,.24); --card:rgba(255,246,230,.04);
+  --a1:#8A6A2C; --a2:#E4C173; --a3:#FFF1CC; --accent:#E4C173; --on:#1A1208;
+  --mehndi:#9FD08A; --baraat:#EEA9AE; --walima:#B6CDEC;
+}
+body[data-side="bride"]{ --a1:#8E4E5B; --a2:#E9AEB8; --a3:#FFE8EC; --accent:#EBB3BC; --on:#2A0F15; --line:rgba(235,179,188,.24); }
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{min-height:100vh;min-height:100dvh;background:var(--bg);color:var(--ink);font-family:"Jost",system-ui,sans-serif;
+  padding:calc(env(safe-area-inset-top) + 26px) 16px calc(env(safe-area-inset-bottom) + 90px);
+  -webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(70% 42% at 8% 0%,rgba(228,193,115,.15),transparent 70%),
+             radial-gradient(70% 45% at 100% 100%,rgba(156,60,74,.2),transparent 72%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url(grain.png);opacity:.05}
+.wrap{max-width:560px;margin:0 auto}
+header{text-align:center;margin-bottom:6px}
+.foil{background:linear-gradient(100deg,var(--a1) 0%,var(--a2) 20%,var(--a3) 36%,var(--a2) 52%,var(--a1) 70%,var(--a2) 88%,var(--a1) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.ur-title{font-family:"Gulzar",serif;font-size:34px;line-height:1.9;padding:0 6px}
+.kicker{font-size:11px;font-weight:400;letter-spacing:.44em;text-transform:uppercase;color:var(--muted);margin-top:-2px}
+.names{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:32px;line-height:1.2;margin-top:10px;letter-spacing:.01em}
+.names em{font-style:italic;font-size:.66em;padding:0 .14em;color:var(--accent)}
+.side{display:inline-flex;align-items:center;gap:10px;margin-top:14px;padding:7px 16px 7px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03)}
+.side b{font-weight:500;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent)}
+.side span{font-family:"Gulzar",serif;font-size:18px;line-height:1.5;color:var(--ink)}
+.host{font-size:11px;letter-spacing:.06em;color:var(--faint);margin-top:9px;word-break:break-all}
+h2{display:flex;align-items:center;gap:12px;margin:26px 2px 12px;font-size:11px;font-weight:400;letter-spacing:.4em;text-transform:uppercase;color:var(--faint)}
+h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.row{position:relative;display:flex;align-items:center;gap:12px;padding:12px 12px 12px 18px;margin-bottom:10px;
+  border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}
+.row::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:0 3px 3px 0;background:var(--bar)}
+.info{flex:1;min-width:0}
+.ur{font-family:"Gulzar",serif;font-size:27px;line-height:1.72;color:var(--a3);text-align:left;overflow-wrap:anywhere}
+.combo .ur{font-size:22px}
+.en{display:flex;align-items:center;gap:7px;margin-top:-2px;font-size:12px;font-weight:500;letter-spacing:.24em;text-transform:uppercase}
+.en i{width:7px;height:7px;border-radius:50%;flex:none}
+.en i + span{margin-left:3px}
+.when{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:16px;color:var(--muted);margin-top:5px}
+.venue{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:3px}
+.mini{display:flex;gap:4px;margin:6px 0 0 -8px}
+.lnk{appearance:none;border:0;background:transparent;color:var(--faint);display:inline-flex;align-items:center;gap:6px;
+  padding:8px;min-height:34px;font:400 11px/1 "Jost",sans-serif;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;cursor:pointer;border-radius:10px}
+.lnk:active{background:rgba(255,255,255,.06)}
+.lnk svg{width:15px;height:15px}
+.share{flex:none;appearance:none;border:0;cursor:pointer;display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 17px 0 15px;border-radius:999px;
+  font:500 12px/1 "Jost",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--on);
+  background:linear-gradient(100deg,var(--a1) 0%,var(--a2) 26%,var(--a3) 50%,var(--a2) 74%,var(--a1) 100%);
+  box-shadow:0 8px 22px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.35);touch-action:manipulation;transition:transform .15s}
+.share:active{transform:scale(.96)}
+.share svg{width:17px;height:17px}
+.row.sent{box-shadow:0 0 0 1px var(--accent) inset}
+.how{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:16px;color:var(--faint);margin-top:22px;line-height:1.5}
+.how b{font-family:"Jost",sans-serif;font-style:normal;font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 24px);transform:translate(-50%,16px);opacity:0;pointer-events:none;
+  padding:12px 20px;border-radius:999px;background:rgba(24,18,16,.94);border:1px solid var(--line);color:var(--ink);
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;transition:opacity .25s,transform .25s;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (max-width:350px){ .share{padding:0 14px} .share span{display:none} .ur{font-size:24px} .combo .ur{font-size:20px} }
+</style>
+</head>
+<body data-side="groom">
+<main class="wrap">
+  <header>
+    <p class="ur-title foil">شادی کا دعوت نامہ</p>
+    <p class="kicker">Share links</p>
+    <h1 class="names">Mohsin <em>&amp;</em> Hafsa</h1>
+    <p class="side"><b>Groom's side</b><span dir="rtl" lang="ur">دولہا کی طرف سے</span></p>
+    <p class="host">hafsamohsin27.github.io/wedding-inv</p>
+  </header>
+  <h2>Single event</h2>
+  <section id="single"></section>
+  <h2>Combined</h2>
+  <section id="combo"></section>
+  <p class="how">Tap <b>Share</b>, choose WhatsApp,<br />pick the person and send.</p>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const SIDE = {"base": "https://hafsamohsin27.github.io/wedding-inv/", "mehndiVenue": "Groom's Residence", "files": {"mehndi": "mehndi-5s9x.html", "baraat": "baraat-bnc8.html", "walima": "walima-fxpj.html", "mehndi-baraat": "mehndi-baraat-xwye.html", "baraat-walima": "baraat-walima-bsmj.html", "mehndi-baraat-walima": "mehndi-baraat-walima-389z.html"}};
+
+const ROWS = [
+  { k:["mehndi"], ur:"مہندی", en:"Mehendi", when:"Thursday · 26 November · 4:00 PM", venue:SIDE.mehndiVenue },
+  { k:["baraat"], ur:"برات",  en:"Baraat",  when:"Friday · 27 November · 6:00 PM" },
+  { k:["walima"], ur:"ولیمہ", en:"Walima",  when:"Saturday · 28 November · 4:00 PM" },
+  { k:["mehndi","baraat"],          ur:"مہندی · برات",        en:"Mehendi + Baraat", when:"26 & 27 November", combo:true },
+  { k:["baraat","walima"],          ur:"برات · ولیمہ",        en:"Baraat + Walima",  when:"27 & 28 November", combo:true },
+  { k:["mehndi","baraat","walima"], ur:"مہندی · برات · ولیمہ", en:"All three",        when:"26, 27 & 28 November", combo:true },
+];
+
+const ICON = {
+  share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8l7.4-4.3M8.3 13.2l7.4 4.3"/></svg>',
+  copy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.2"/><path d="M5 15V6.2A2.2 2.2 0 0 1 7.2 4H15"/></svg>',
+  open:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v4.2A1.8 1.8 0 0 1 16.2 20H5.8A1.8 1.8 0 0 1 4 18.2V7.8A1.8 1.8 0 0 1 5.8 6H10"/></svg>'
+};
+
+let tt = 0;
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.classList.add("on");
+  clearTimeout(tt); tt = setTimeout(() => t.classList.remove("on"), 1900);
+}
+
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; }
+  catch (e) {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly", "");
+    ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+    document.body.appendChild(ta); ta.select();
+    let ok = false; try { ok = document.execCommand("copy"); } catch (_) {}
+    ta.remove(); return ok;
+  }
+}
+
+function openWhatsApp(url) {
+  window.open("https://wa.me/?text=" + encodeURIComponent(url), "_blank", "noopener");
+  toast("Opening WhatsApp");
+}
+
+/* the phone's own share sheet (WhatsApp and every other app) */
+function share(url, row, el) {
+  if (!navigator.share) { openWhatsApp(url); return; }
+  navigator.share({ title: "Mohsin & Hafsa · " + row.en, url })
+    .then(() => { el.classList.add("sent"); toast("Shared"); })
+    .catch(err => { if (!err || err.name !== "AbortError") openWhatsApp(url); });
+}
+
+function build(row) {
+  const url = SIDE.base + SIDE.files[row.k.join("-")];
+  const el = document.createElement("article");
+  el.className = "row" + (row.combo ? " combo" : "");
+  el.style.setProperty("--bar", row.k.length === 1 ? `var(--${row.k[0]})`
+    : `linear-gradient(180deg,${row.k.map(k => `var(--${k})`).join(",")})`);
+  el.innerHTML = `
+    <div class="info">
+      <p class="ur" dir="rtl" lang="ur">${row.ur}</p>
+      <p class="en">${row.k.map(k => `<i style="background:var(--${k})"></i>`).join("")}<span>${row.en}</span></p>
+      <p class="when">${row.when}</p>
+      ${row.venue ? `<p class="venue">${row.venue}</p>` : ""}
+      <p class="mini">
+        <button class="lnk" type="button" data-copy>${ICON.copy}<span>Copy</span></button>
+        <a class="lnk" href="${url}" target="_blank" rel="noopener noreferrer">${ICON.open}<span>Open</span></a>
+      </p>
+    </div>
+    <button class="share" type="button" aria-label="Share ${row.en} invitation">${ICON.share}<span>Share</span></button>`;
+  el.querySelector(".share").addEventListener("click", () => share(url, row, el));
+  el.querySelector("[data-copy]").addEventListener("click", async () => toast(await copyText(url) ? "Link copied" : "Copy failed"));
+  return el;
+}
+
+const single = document.getElementById("single"), combo = document.getElementById("combo");
+ROWS.forEach(r => (r.combo ? combo : single).appendChild(build(r)));
+</script>
+</body>
+</html>
